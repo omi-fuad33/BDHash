@@ -16,36 +16,24 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<div class="o_container">
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
+<div >
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'omnispace-bdhash' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$omnispace_bdhash_description = get_bloginfo( 'description', 'display' );
-			if ( $omnispace_bdhash_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $omnispace_bdhash_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
+	<header id="masthead" class="site-header o_header_container">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/hash_logo.jpg" alt="" class="o_header_logo">
+	<div class="o_social_media_wrap">
+		<ul>
+			<li><i class="fa fa-facebook-square"></i></li>
+			<li><i class="fa fa-flickr"></i></li>
+		</ul>
+	</div>
+		<nav id="site-navigation" class="main-navigation o_navigation_wrapper">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'omnispace-bdhash' ); ?></button>
 			<?php
 			wp_nav_menu(

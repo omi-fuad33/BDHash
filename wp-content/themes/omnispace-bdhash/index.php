@@ -18,11 +18,12 @@ get_header();
 	<main id="primary" class="site-main">
         <?php
             include 'index-parts/part1.php';
-            include 'index-parts/part2.php';
+            include 'index-parts/part4.php';
             include 'index-parts/part3.php';
+            include 'index-parts/part5.php';
+            include 'index-parts/part2.php';
 		?>
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

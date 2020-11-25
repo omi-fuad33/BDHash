@@ -141,11 +141,8 @@ add_action( 'widgets_init', 'omnispace_bdhash_widgets_init' );
  */
 function omnispace_bdhash_scripts() {
 	wp_enqueue_style( 'omnispace-bdhash-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'omnispace-bdhash-style', 'rtl', 'replace' );
 	
-	wp_enqueue_style ('omi-style', get_template_directory_uri().'/css/omi.css');
-
-	wp_enqueue_style ('naeeb-style', get_template_directory_uri().'/css/naeeb.css');
+	wp_style_add_data( 'omnispace-bdhash-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'omnispace-bdhash-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	
@@ -159,12 +156,13 @@ function omnispace_bdhash_scripts() {
 
 	wp_enqueue_style ('bootstrap', "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
 
-    
+	wp_enqueue_style ('omi-style', get_template_directory_uri().'/css/omi.css');
+
+	wp_enqueue_style ('naeeb-style', get_template_directory_uri().'/css/naeeb.css');
+
 	wp_enqueue_script( 'jquery-js', "https://code.jquery.com/jquery-3.4.1.min.js");
 
 	wp_enqueue_script('materialize-js', "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js");
-
-	wp_enqueue_script( 'dhrubo-js', get_template_directory_uri() . '/js/dhrubo.js' );
     
     wp_enqueue_script( 'naeeb-js', get_template_directory_uri() . '/js/naeeb.js' );
     
