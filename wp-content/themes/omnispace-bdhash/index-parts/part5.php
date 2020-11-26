@@ -1,6 +1,6 @@
 <div class="o_news_wrapper">
     <div class="o_events_wrap">
-        <h1 class="o_section_header o_section_header_news">News to Share</h1>
+        <h1 class="o_section_header o_section_header_news">Highlights</h1>
         <div class="row">
                 <div class="col-lg-4">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/news1.jpg" alt="" class="o_news_img">

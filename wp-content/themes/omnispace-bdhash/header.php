@@ -26,7 +26,22 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'omnispace-bdhash' ); ?></a>
 
 	<header id="masthead" class="site-header o_header_container">
-	<img src="<?php echo get_template_directory_uri(); ?>/images/hash_logo.jpg" alt="" class="o_header_logo">
+	<div id="o_logo_slider_wrapper" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner o_logo_slider_container">
+			<div class="carousel-item active">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/DMH-01.png" alt="" class="o_header_logo">
+			</div>
+			<div class="carousel-item">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/DH3-01.png" alt="" class="o_header_logo">
+			</div>
+			<div class="carousel-item">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/Dhaka-full-moon.png" alt="" class="o_header_logo">
+			</div>
+			<div class="carousel-item">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/Dhaka-pussy-hash.png" alt="" class="o_header_logo">
+			</div>
+		</div>
+	</div>
 	<div class="o_social_media_wrap">
 		<ul>
 			<li><i class="fa fa-facebook-square"></i></li>
